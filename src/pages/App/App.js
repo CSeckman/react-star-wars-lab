@@ -1,10 +1,21 @@
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
-
+import NavBar from '../../components/NavBar/NavBar';
+import Starships from '../Starships/Starships';
+import StarshipPage from '../StarshipPage/StarshipPage'
 
 
 function App() {
+  const navTitle= "Starwars Starships"
   return (
-    <h1> This is my app </h1>
+    <>
+    <NavBar navTitle={navTitle}/>
+    <Routes>
+      <Route path="/" element={<Starships />}/>
+      <Route path="/starship/:id" element={<StarshipPage />}/>
+    </Routes>
+    </>
   );
 }
 
