@@ -14,10 +14,10 @@ const Starships = (props) => {
 return ( 
   <>
   {allStarships.length ? 
-    <div id="container">
+    <div className="starship-container">
       {allStarships.map((starship, idx) => 
-        <Link id="starships-link" to={`/starship/${idx}`} key={idx} state={{starship}}>
-          <p id="starship-div">{starship.name}</p>
+        <Link className="starships-link" to={`/starship/${idx}`} key={idx} state={{starship}}>
+          <p className="starship-p">{starship.name}</p>
         </Link>
       )}
     </div>

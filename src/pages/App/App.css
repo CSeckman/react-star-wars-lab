@@ -17,19 +17,26 @@ body {
   text-align: center;
 }
 
-#starships-link {
-  text-decoration: none;
-  color:black;
-  background-color: rgb(96, 108, 143);
-  width: 150px;
+.starships-link {
+  width: 200px;
   height: 100px;
   margin: 20px;
-  text-align: center;
+  border-radius:12px;
+  text-decoration: none;
+  color: black;
+  background-color: grey;
+  
 }
 
-#container {
+.starship-p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.starship-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
-  justify-items: center;
-} 
+}
 
